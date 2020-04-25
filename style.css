@@ -79,6 +79,8 @@ h6{
    border-radius: 5px;
    box-shadow: 0 0 5px #ccc;
 }
+
+/* MEDIA QUERIES */
 @media only screen and (min-width: 1900px){
     .landingPage{
         background: url("./Assets/laptop-3087585_1920-large.jpg");
