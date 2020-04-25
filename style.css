@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+body{
+    background-color: whitesmoke;
+
+}
+.landingPage{
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background: url("./Assets/laptop-3087585_1280-medium.jpg");
+    background-size: cover;
+}
+.navBar{
+    background-color: rgba(240, 230, 230, 0.7);
+    height: 60px;
+    color: black;
+    position: fixed;
+    top: 0;
+    width:100%;
+   
+}
+h1{
+    font-size: 2.1em;
+    /* display: block; */
+}
+.navBar h1{
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu{
+    float: right;
+    padding: 10px;
+
+  
+}
+.menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+h2{
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+h6{
+    font-size: medium;
+    font-weight: 400;
+    opacity: 0.6;
+    padding-bottom: 10px;
+
+}
+
+.content{
+    margin-top: 30px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+}
+.article{
+   margin:5px;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 5px #ccc;
+}
+@media only screen and (min-width: 1900px){
+    .landingPage{
+        background: url("./Assets/laptop-3087585_1920-large.jpg");
+        height: 85vh;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 1.8em;
+    }
+    h2{
+        font-size: 1.7em;
+    }
+    .landingPage{
+        background: url("./Assets/laptop-3087585_640-small.jpg");
+        height: 50vh;    
+    }
+    .content {
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 450px){
+    .menu{
+        visibility: hidden;
+    }
+
+}
