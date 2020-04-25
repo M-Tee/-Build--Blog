@@ -18,7 +18,7 @@ body{
 .navBar{
     background-color: rgba(240, 230, 230, 0.7);
     height: 60px;
-    color: black;
+    color: #670000;
     position: fixed;
     top: 0;
     width:100%;
@@ -42,6 +42,16 @@ h1{
     list-style: none;
     display: inline-block;
     padding: 10px;
+    margin-right: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #670000;
+}
+.menu li a:hover{
+    background: #670000;
+    padding: 15px;
+    color: #ccc;
 }
 h2{
     font-size: 2em;
