@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
-    <title>The Girl Code Blog</title>
-  </head>
-  <body>
-    <section class = "landingPage">
-        <nav class = "navBar">
-            <h1 >The Girl Code</h1>
-            <ul class = "menu">
-                  <li> <a href="#">Home </a> </li>
-                  <li> <a href="#">About </a> </li>
-                  <li> <a href="addBlog.html">Add Blog</a></li>
 
-                </ul>
-      </nav>
-    </section>
-  
-    <div class = "content">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css">
+  <title>The Girl Code Blog</title>
+</head>
 
-        <div class="article one">
+<body>
+  <section class="landingPage">
+    <nav class="navBar">
+      <h1>The Girl Code</h1>
+      <ul class="menu">
+        <li> <a href="#">Home </a> </li>
+        <li> <a href="#">About </a> </li>
+        <li> <a href="addBlog.html">Add Blog</a></li>
+
+      </ul>
+    </nav>
+  </section>
+
+  <section id="blog-section" class="content">
+    <blog-post
+    v-for="blog in blogs"
+    :key = "blog.id"
+    :blog = "blog">
+    </blog-post>
+
+    <!-- <div class="article one">
             <h2>Learning Javascript</h2>
             <h6>By M-tee on Thu apr 23 2020 10:43 GMT -00400 (Eastern Daylight Time)</h6>
             <p> dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. 
             </p>
-        </div>
-  
-      <div class = "article two">
-          <h2>My first Blog !</h2>
-          <h6>By M-tee on Thu apr 23 2020 10:43 GMT -00400 (Eastern Daylight Time)</h6>
-          </p>Hi everyone, am so glad am posting my first blog tonight</p>
-      </div>
+        </div> -->
+
+    <div class="article two">
+      <h2>My first Blog !</h2>
+      <h6>By M-tee on Thu apr 23 2020 10:43 GMT -00400 (Eastern Daylight Time)</h6>
+      </p>Hi everyone, am so glad am posting my first blog tonight</p>
     </div>
-    
-  </body>
+  </section>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
