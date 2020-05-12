@@ -1,4 +1,4 @@
-Vue.components('blog-post', {
+Vue.component('blog-post', {
     props: ['blog'],
     template: `
      <div class="blog article one">
@@ -24,9 +24,11 @@ const blogs = [
         content: 'dolor  sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.'
     }
 ];
+
 new Vue({
     el: '#blog-section',
     data: {
         blogs
     }
+  
 });
